@@ -52,6 +52,14 @@ function validateSubscription(req, res, next) {
     next(); 
 }
 
+function validateEmail(req, res, next) {
+    const {error} = authSchemas.emailSchema.validate(req.body);
+    if(error) {
+    throw httpError.HttpError(400, error.message);
+}
+    next(); 
+}
+
 module.exports = {
     validateAddContact,
     validatePutContact,
@@ -59,4 +67,5 @@ module.exports = {
     validateRegistration,
     validateLogin,
     validateSubscription,
+    validateEmail,
 }
