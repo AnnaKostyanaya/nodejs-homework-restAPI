@@ -2,3 +2,6 @@ DB_HOST=mongodb+srv://Hanna:d.s6JegcTG5CDXt@cluster0.5ntxckj.mongodb.net/Contact
 DB_HOST_TEST=mongodb+srv://Hanna:d.s6JegcTG5CDXt@cluster0.5ntxckj.mongodb.net/ContactBook_test?retryWrites=true&w=majority
 PORT=3000
 SECRET_KEY=19opGty67msgTkk90
+META_PASSWORD=Hf123456
+EMAIL_FROM=anna.kostiana@meta.ua
+BASE_URL=http://localhost:3000
